@@ -10,7 +10,7 @@ An example is the Plone toolbar where the `object_tabs` (view, edit, folder cont
 The available actions for the currently logged in user can be retrieved by calling the `@actions` endpoint on a specific context.
 This also works for unauthenticated users.
 
-## Get Actions
+## Get actions
 
 ### Query function
 
@@ -22,6 +22,6 @@ Use the `useGetActions` hook to get the actions at a given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+- **Required**: Yes

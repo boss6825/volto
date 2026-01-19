@@ -1,9 +1,9 @@
-# Control Panels
+# Control panels
 
-Control panels in Plone allow you to configure the global site setup of a Plone site.
-The `@controlpanels` endpoint in `plone.restapi` allows you to list all existing control panels in a Plone site, and to retrieve or edit the settings of a specific control panel.
+Control panels in a plone site allow you to configure the global site setup of a Plone site.
+The `@controlpanels` endpoint in `plone.restapi` allows you to list all existing control panels in a plone site, and to retrieve or edit the settings of a specific control panel.
 
-## Get Control Panels List
+## Get control panels list
 
 ### Query function
 
@@ -13,7 +13,7 @@ Use the `getControlpanelsQuery` function to get the query for fetching the contr
 
 Use the `useGetControlpanels` hook to get the control panels list.
 
-## Get Control Panel
+## Get control panel
 
 ### Query function
 
@@ -25,11 +25,11 @@ Use the `useGetControlpanel` hook to get a control panel at a given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required**: Yes
 
-## Add Custom Elements in Control Panel
+## Add custom elements in control panel
 
 ### Mutation function
 
@@ -41,11 +41,11 @@ Use the `useCreateControlpanel` hook to add a custom element in the control pane
 
 ### Parameters
 
-- **data**: any
+- `data`: any
 
   - **Required**: Yes
 
-## Update Custom Elements in Control Panel
+## Update custom elements in control panel
 
 ### Mutation function
 
@@ -57,11 +57,11 @@ Use the `useUpdateControlpanel` hook to update a custom element in the control p
 
 ### Parameters
 
-- **data**: any
+- `data`: any
 
   - **Required**: Yes
 
-## Delete Custom Elements in Control Panel
+## Delete custom elements in control panel
 
 ### Mutation function
 
@@ -73,10 +73,10 @@ Use the `useDeleteControlpanel` hook to delete a custom element in the control p
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required**: Yes
 
-- **data**: any
+- `data`: any
 
   - **Required**: Yes

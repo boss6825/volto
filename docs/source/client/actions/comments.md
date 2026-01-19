@@ -6,7 +6,7 @@ Commenting can be enabled globally for specific content types and for single con
 
 When commenting is enabled on your content object, you can retrieve a list of all existing comments, add new comments, reply to existing comments, or delete a comment.
 
-## Get Comments List
+## Get comments list
 
 ### Query function
 
@@ -18,11 +18,11 @@ Use the `useGetCommentsList` hook to get the comments list for a page.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-## Add Comment
+## Add comment
 
 ### Mutation function
 
@@ -34,16 +34,16 @@ Use the `useCreateComment` hook to add a comment for a page.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-- **reply_id**: string
+- `reply_id`: string
 
   - **Required:** No
   - The id of the comment to which you want to reply
 
-- **data**: object
+- `data`: object
 
   - **Required:** Yes
   - It can have the following fields:
@@ -53,7 +53,7 @@ Use the `useCreateComment` hook to add a comment for a page.
     - **Required:** Yes
     - The content of the comment.
 
-## Update Comment
+## Update comment
 
 ### Mutation function
 
@@ -65,15 +65,15 @@ Use the `useUpdateComment` hook to update a comment for the given id and path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-- **comment_id**: string
+- `comment_id`: string
 
   - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
   - **Required:** Yes
   - It can have the following fields:
@@ -83,7 +83,7 @@ Use the `useUpdateComment` hook to update a comment for the given id and path.
     - **Required:** Yes
     - The content of the comment.
 
-## Delete Comment
+## Delete comment
 
 ### Mutation function
 
@@ -95,10 +95,10 @@ Use the `useDeleteComment` hook to delete a comment for the given id and path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-- **comment_id**: string
+- `comment_id`: string
 
   - **Required:** Yes

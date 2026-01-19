@@ -1,6 +1,6 @@
 # Breadcrumbs
 
-## Get Breadcrumbs
+## Get breadcrumbs
 
 ### Query function
 
@@ -12,6 +12,6 @@ Use the `useGetBreadcrumbs` hook to get the breadcrumbs for a page.
 
 ### Parameters:
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
