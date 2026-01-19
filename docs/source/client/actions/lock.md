@@ -2,7 +2,7 @@
 
 Locking is a mechanism to prevent users from accidentally overriding each other's changes.
 
-When a user edits a content object in a plone site, the object is locked until the user hits the {guilabel}`Save` or {guilabel}`Cancel` button.
+When a user edits a content object in a Plone, the object is locked until the user hits the {guilabel}`Save` or {guilabel}`Cancel` button.
 If a second user tries to edit the object at the same time, she will see a message that this object is locked.
 
 The API consumer can create, read, update, and delete a content-type lock.

@@ -1,6 +1,6 @@
 # Link integrity
 
-When you create relations between content objects in a plone site (for example, via relation fields or links in text blocks), these relations are stored in the database.
+When you create relations between content objects in a Plone (for example, via relation fields or links in text blocks), these relations are stored in the database.
 The Plone user interface will use those stored relations to show a warning when you try to delete a content object that is still referenced elsewhere.
 Link integrity avoids broken links ("breaches") in the site.
 

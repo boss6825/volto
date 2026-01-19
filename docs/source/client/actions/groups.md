@@ -1,6 +1,6 @@
 # Groups
 
-Available groups in a plone site can be created, queried, updated, and deleted by interacting with the `@groups` endpoint on the portal root.
+Available groups in a Plone can be created, queried, updated, and deleted by interacting with the `/@groups` endpoint on the portal root.
 This requires an authenticated user.
 
 ## Get groups list

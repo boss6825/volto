@@ -1,6 +1,6 @@
 # Control panels
 
-Control panels in a plone site allow you to configure the global site setup of a Plone site.
+Control panels in a Plone allow you to configure the global site setup of a Plone site.
 The `@controlpanels` endpoint in `plone.restapi` allows you to list all existing control panels in a plone site, and to retrieve or edit the settings of a specific control panel.
 
 ## Get control panels list

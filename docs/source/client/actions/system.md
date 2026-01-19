@@ -1,6 +1,6 @@
 # System
 
-The `@system` endpoint exposes system information about the plone backend.
+The `@system` endpoint exposes system information about the Plone backend.
 
 ## Get system information
 
