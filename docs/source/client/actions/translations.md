@@ -2,7 +2,7 @@
 
 Translations endpoint is used to handle the translation information of the content objects.
 
-## Get Translation
+## Get translation
 
 ### Query function
 
@@ -14,11 +14,11 @@ Use the `useGetTranslation` hook to get the translation information of the given
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-## Link Translation
+## Link translation
 
 ### Mutation function
 
@@ -30,11 +30,11 @@ Use the `useLinkTranslation` hook to link a translation to the given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
   - **Required:** Yes
   - It can have the following fields:
@@ -43,7 +43,7 @@ Use the `useLinkTranslation` hook to link a translation to the given path.
 
     - **Required:** Yes
 
-## Unlink Translation
+## Unlink translation
 
 ### Mutation function
 
@@ -55,11 +55,11 @@ Use the `useUnlinkTranslation` hook to unlink a translation from the given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
   - **Required:** Yes
   - It can have the following fields:

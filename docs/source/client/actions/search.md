@@ -10,7 +10,7 @@ We therefore have a global search by invoking the `/@search` endpoint on the sit
 We also have contextual searches by invoking that endpoint on any other context.
 All searches use the same pattern.
 
-## Get Search
+## Get search
 
 ### Query function
 
@@ -22,7 +22,7 @@ Use the `useGetSearch` hook to get the search results for the given query.
 
 ### Parameters
 
-- **query**: object
+- `query`: object
 
   - **Required:** Yes
   - It can have the following fields:

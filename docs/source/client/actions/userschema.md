@@ -6,7 +6,7 @@ These properties define the site user's profile and the user itself via the Plon
 These fields are dynamic and customizable by integrators so they do not adhere to a fixed schema interface.
 This dynamic schema is exposed by this endpoint in order to build the user's profile form.
 
-## Get User Schema
+## Get user schema
 
 ### Query function
 

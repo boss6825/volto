@@ -3,7 +3,7 @@
 Available users in a Plone site can be created, queried, updated, and deleted by interacting with the `/@users` endpoint on portal root.
 This action requires an authenticated user:
 
-## Get Users list
+## Get users list
 
 ### Query function
 
@@ -15,23 +15,23 @@ Use the `useGetUsers` hook to get the list of all users in the portal.
 
 ### Parameters
 
-- **query**: string
+- `query`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **groupsFilter**: string[]
+- `groupsFilter`: string[]
 
-  - **Required**: No
+  - **Required:** No
 
-- **search**: string
+- `search`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **limit**: number
+- `limit`: number
 
-  - **Required**: No
+  - **Required:** No
 
-## Get User
+## Get user
 
 ### Query function
 
@@ -43,11 +43,11 @@ Use the `useGetUser` hook to get the information about an individual user at the
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-## Add User
+## Add user
 
 ### Mutation function
 
@@ -59,38 +59,38 @@ Use the `useCreateUser` hook to add a new user at the given path.
 
 ### Parameters
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     `description: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `email: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
     `fullname: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `home_page: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `location: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `sendPasswordReset: boolean`
 
-    - **Required**: No
+    - **Required:** No
 
     `password: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `roles: string[]`
 
@@ -98,9 +98,9 @@ Use the `useCreateUser` hook to add a new user at the given path.
 
     `username: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
-## Update User
+## Update user
 
 ### Mutation function
 
@@ -112,44 +112,44 @@ Use the `useUpdateUser` hook to update an existing user at the given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     `description: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `email: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `fullname: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `home_page: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `location: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `username: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `portrait: object`
 
-    - **Required**: No
+    - **Required:** No
 
-## Delete User
+## Delete user
 
 ### Mutation function
 
@@ -161,11 +161,11 @@ Use the `useDeleteUser` hook to delete an existing user at the given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-## Update User Password
+## Update user password
 
 ### Mutation function
 
@@ -177,24 +177,24 @@ Use the `useUpdatePassword` hook to update an existing user password at the give
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - The data object can contain the following fields:
 
     `old-password: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
     `new-password: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
-## Reset User Password
+## Reset user password
 
 ### Mutation function
 
@@ -206,11 +206,11 @@ Use the `useResetPassword` hook to reset an existing user password at the given 
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-## Reset User Password with Token
+## Reset user password with token
 
 ### Mutation function
 
@@ -222,19 +222,19 @@ Use the `useResetPasswordWithToken` hook to reset an existing user password at t
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     `reset_token: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
     `new_password: string`
 
-    - **Required**: Yes
+    - **Required:** Yes

@@ -10,7 +10,7 @@ You can define relations either with content type schema fields `RelationChoice`
 - The relations `isReferencing` (block text links to a Plone content object) and `iterate-working-copy` (working copy is enabled and the content object is a working copy) are not editable.
   They are created and deleted with links in text, respectively creating and deleting working copies.
 
-## Get Relations List
+## Get relations list
 
 ### Query function
 
@@ -20,7 +20,7 @@ Use the `getRelationsListQuery` function to get the query for fetching the list 
 
 Use the `useGetRelationsList` hook to get the list of all existing relations user has access to.
 
-## Get Relations
+## Get relations
 
 ### Query function
 
@@ -32,19 +32,19 @@ Use the `useGetRelations` hook to get the relations for the given parameters.
 
 ### Parameters
 
-- **source**: string
+- `source`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **relation**: string
+- `relation`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **onlyBroken**: boolean
+- `onlyBroken`: boolean
 
-  - **Required**: No
+  - **Required:** No
 
-## Add Relation
+## Add relation
 
 ### Mutation function
 
@@ -56,24 +56,24 @@ Use the `useCreateRelations` hook to add a relation for the given parameters.
 
 ### Parameters
 
-- **data**: object[]
+- `data`: object[]
 
-  - **Required**: Yes
+  - **Required:** Yes
   - An array of objects with the following fields:
 
     `source: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
     `target: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
     `relation: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
-## Fix Relation
+## Fix relation
 
 ### Mutation function
 
@@ -85,16 +85,16 @@ Use the `useFixRelations` hook to fix broken relations.
 
 ### Parameters
 
-- **data**: object
+- `data`: object
 
-  - **Required**: No
+  - **Required:** No
   - It can have the following fields:
 
     `flush: boolean`
 
-    - **Required**: No
+    - **Required:** No
 
-## Delete Relation
+## Delete relation
 
 ### Mutation function
 
@@ -106,36 +106,36 @@ Use the `useDeleteRelations` hook to delete a relation for the given parameters.
 
 ### Parameters
 
-- **data**: object[]
+- `data`: object[]
 
-  - **Required**: Yes
+  - **Required:** Yes
   - An array of objects with the following fields:
 
     `items: object[]`
 
-    - **Required**: No
+    - **Required:** No
     - An array of objects with the following fields:
 
       `source: string`
 
-      - **Required**: Yes
+      - **Required:** Yes
 
       `target: string`
 
-      - **Required**: Yes
+      - **Required:** Yes
 
       `relation: string`
 
-      - **Required**: Yes
+      - **Required:** Yes
 
     `source: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `target: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `relation: string`
 
-    - **Required**: No
+    - **Required:** No
