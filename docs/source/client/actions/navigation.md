@@ -2,7 +2,7 @@
 
 Get the top-level navigation items or navigation item tree with the navigation endpoint.
 
-## Get Navigation
+## Get navigation
 
 ### Query function
 
@@ -14,6 +14,6 @@ Use the `useGetNavigation` hook to get the navigation for a page.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes

@@ -1,25 +1,25 @@
-# Querysources
+# Query sources
 
-## Get querysource
+## Get query source
 
 ### Query function
 
-Use the `getQuerysourceQuery` function to get the query for fetching the querysource for a given path, field and query.
+Use the `getQuerysourceQuery` function to get the query for fetching the `querysource` for a given path, field, and query.
 
 ### Hook
 
-Use the `useGetQuerysource` hook to get the querysource for a given path, field and query.
+Use the `useGetQuerysource` hook to get the `querysource` for a given path, field, and query.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required:** Yes
 
-- **field**: string
+- `field`: string
 
   - **Required:** Yes
 
-- **query**: string
+- `query`: string
 
   - **Required:** Yes

@@ -27,7 +27,7 @@ Use the `useGetAddon` hook to get an add-on at a given path.
 
 ### Parameters
 
-- **addonId**: string
+- `addonId`: string
 
   - **Required**: Yes
 

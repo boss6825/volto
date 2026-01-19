@@ -4,7 +4,7 @@ This endpoint will search for all the available principals in the local PAS plug
 We define a principal as any user or group in the system.
 This endpoint requires an authenticated user.
 
-## Principals Search
+## Principals search
 
 ### Query function
 
@@ -16,6 +16,6 @@ Use the `useGetPrincipals` hook to get the principals for the given query string
 
 ### Parameters
 
-- **search**: string
+- `search`: string
 
   - **Required:** Yes

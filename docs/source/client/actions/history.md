@@ -4,7 +4,7 @@ The `@history` endpoint exposes history and versioning information on previous v
 Each change or workflow change on a content object or file is listed.
 It also allows to revert to a previous version of the file.
 
-## Get History
+## Get history
 
 ### Query function
 
@@ -16,11 +16,11 @@ Use the `useGetHistory` hook to get the history for a page.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-## Get Versioned History
+## Get versioned history
 
 ### Query function
 
@@ -32,15 +32,15 @@ Use the `useGetHistoryVersioned` hook to get the versioned history for a page.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **version**: string
+- `version`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-## Revert to Version
+## Revert to version
 
 ### Mutation function
 
@@ -52,15 +52,15 @@ Use the `useRevertHistory` hook to revert to a previous version of a page.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     `version: number`
 
-    - **Required**: Yes
+    - **Required:** Yes

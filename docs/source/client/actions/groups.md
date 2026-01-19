@@ -1,9 +1,9 @@
 # Groups
 
-Available groups in a Plone site can be created, queried, updated, and deleted by interacting with the `/@groups` endpoint on the portal root.
+Available groups in a plone site can be created, queried, updated, and deleted by interacting with the `@groups` endpoint on the portal root.
 This requires an authenticated user.
 
-## Get Groups list
+## Get groups list
 
 ### Query function
 
@@ -13,7 +13,7 @@ Use the `getGroupsQuery` function to get the query for fetching the groups list.
 
 Use the `useGetGroups` hook to get the groups list.
 
-## Get Group
+## Get group
 
 ### Query function
 
@@ -25,11 +25,11 @@ Use the `useGetGroup` hook to get a group at a given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
   - **Required**: Yes
 
-## Add Group
+## Add group
 
 ### Mutation function
 
@@ -41,44 +41,44 @@ Use the `useCreateGroup` hook to add a group at a given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
-  - Required: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     `description: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `email: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `groupname: string`
 
-    - **Required**: Yes
+    - **Required:** Yes
 
     `groups: string[]`
 
-    - **Required**: No
+    - **Required:** No
 
     `roles: string[]`
 
-    - **Required**: No
+    - **Required:** No
 
     `title: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `users: string[]`
 
-    - **Required**: No
+    - **Required:** No
 
-## Update Group
+## Update group
 
 ### Mutation function
 
@@ -90,28 +90,28 @@ Use the `useUpdateGroup` hook to update an existing group at the given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     `description: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `email: string`
 
-    - **Required**: No
+    - **Required:** No
 
     `groupname: string`
 
-    - **Required**: No
+    - **Required:** No
 
-## Delete Group
+## Delete group
 
 ### Mutation function
 
@@ -123,6 +123,6 @@ Use the `useDeleteGroup` hook to delete a group at the given path.
 
 ### Parameters
 
-- **path**: string
+- `path`: string
 
-  - **Required**: Yes
+  - **Required:** Yes

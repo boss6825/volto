@@ -1,8 +1,8 @@
-# Querystring Search
+# Querystring search
 
 The `@querystring-search` endpoint returns search results that can be filtered on search criteria.
 
-## Get Querystring Search
+## Get Querystring search
 
 ### Query function
 
@@ -14,51 +14,51 @@ Use the `useGetQuerystringSearch` hook to get the search results for a page.
 
 ### Parameters
 
-- **query**: object[]
+- `query`: object[]
 
-  - **Required**: Yes
+  - **Required:** Yes
   - An array of objects with the following fields:
 
-    - **i**: string
+    - `i`: string
 
-      - **Required**: Yes
+      - **Required:** Yes
       - The index of the filter (the name of the field to which this filter is applied).
 
-    - **o**: string
+    - `o`: string
 
-      - **Required**: Yes
+      - **Required:** Yes
       - The operator of the filter.
 
-    - **v**: string[]
+    - `v`: string[]
 
-      - **Required**: Yes
+      - **Required:** Yes
       - The value of the filter.
 
-- **b_start**: string
+- `b_start`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **b_size**: string
+- `b_size`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **limit**: string
+- `limit`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **sort_on**: string
+- `sort_on`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **sort_order**: string
+- `sort_order`: string
 
-  - **Required**: No
+  - **Required:** No
 
-- **fullobjects**: boolean
+- `fullobjects`: boolean
 
-  - **Required**: No
+  - **Required:** No
 
-## Get Querystring Search Using POST request
+## Get Querystring search using POST request
 
 ### Mutation function
 
@@ -70,57 +70,57 @@ Use the `usePostQuerystringSearch` hook to get the search results for a page.
 
 ### Parameters
 
-- **data**: object
+- `data`: object
 
-  - **Required**: Yes
+  - **Required:** Yes
   - It can have the following fields:
 
     - `query: object[]`
 
-    - **Required**: Yes
+    - **Required:** Yes
     - An array of objects with the following fields:
 
       - `i: string`
 
-        - **Required**: Yes
+        - **Required:** Yes
         - The index of the filter (the name of the field to which this filter is applied).
 
       - `o: string`
 
-        - **Required**: Yes
+        - **Required:** Yes
         - The operator of the filter.
 
       - `v: array`
 
-        - **Required**: Yes
+        - **Required:** Yes
         - The value of the filter.
 
     - `b_start: string`
 
-      - **Required**: No
+      - **Required:** No
       - The start index of the search results.
 
     - `b_size: string`
 
-      - **Required**: No
+      - **Required:** No
       - The size of the search results.
 
     - `limit: string`
 
-      - **Required**: No
+      - **Required:** No
       - The limit of the search results.
 
     - `sort_on: string`
 
-      - **Required**: No
+      - **Required:** No
       - The field to sort on.
 
     - `sort_order: string`
 
-      - **Required**: No
+      - **Required:** No
       - The order to sort on.
 
     - `fullobjects: boolean`
 
-      - **Required**: No
+      - **Required:** No
       - Whether to return the full objects or not.
